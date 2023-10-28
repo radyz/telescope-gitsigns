@@ -2,6 +2,6 @@ local pickers = require("pickers")
 
 return require("telescope").register_extension({
     exports = {
-        gitsigns = pickers.gitsigns,
+        git_signs = pickers.git_signs,
     },
 })

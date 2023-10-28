@@ -28,5 +28,11 @@ require("lazy").setup({
 require("telescope").setup({})
 -- To get telescope-gitsigns loaded and working with telescope, you need to call
 -- load_extension, somewhere after setup function:
-require("telescope").load_extension("gitsigns")
+require("telescope").load_extension("git_signs")
+```
+
+## Usage
+
+```viml
+:Telescope git_signs
 ```

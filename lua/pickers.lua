@@ -8,7 +8,7 @@ local finders = require("finders")
 
 local M = {}
 
-M.gitsigns = function(opts)
+M.git_signs = function(opts)
     opts = opts or {}
 
     local finder = finders.generate_buffer_finder(opts)
