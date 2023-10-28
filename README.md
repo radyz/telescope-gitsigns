@@ -3,6 +3,8 @@
 Provides a picker to view all hunks in the current buffer. Two actions are provided to
 either `reset` or `stage` a hunk (`?` to view all available mappings).
 
+![image](https://github.com/radyz/telescope-gitsigns/assets/1755599/2532ce66-a46f-4127-8e69-28b9e4465d17)
+
 ## Installation
 
 The extension may be installed manually or with a plugin manager of choice.
