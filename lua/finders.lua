@@ -7,7 +7,6 @@ local M = {}
 
 local entry_maker = function(entry)
     local hunk = entry.hunk
-    local text = string.format("Lines %d-%d", hunk.added.start, hunk.vend)
 
     local displayer = entry_display.create({
         separator = "",
@@ -25,13 +24,13 @@ local entry_maker = function(entry)
                 sign.text,
                 sign.hl,
             },
-            text,
+            hunk.head,
         })
     end
 
     return {
         value = entry,
-        ordinal = text,
+        ordinal = hunk.head,
         display = make_display,
         lnum = hunk.added.start,
         filename = entry.filename,
