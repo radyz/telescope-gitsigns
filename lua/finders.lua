@@ -50,6 +50,7 @@ M.generate_buffer_finder = function(opts)
         for _, hunk in ipairs(hunks) do
             table.insert(results, {
                 bufnr = current_buf,
+                filename = bcache.file,
                 hunk = hunk,
             })
         end
